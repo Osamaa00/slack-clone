@@ -9,3 +9,13 @@ header left, center and right
 for header include avatar and time icon
 define a slack color variable in app.css 
 to be used across the app
+now building the sidebar component inside a div coz 
+we need to wrap it in the router later on
+
+creating the sidebar
+create the sidebar header and inside that
+wrapping the name and online icon with sidebar info
+
+creating the sidebar option component
+inside the sidebar option pass an icon
+and only render it if it exists
