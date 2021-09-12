@@ -1,0 +1,11 @@
+First build the header component
+Then sidebar
+and then router for chat channels routing
+
+For header component there are three elements
+so divide them in three divs this way flexboxing is ez and clean
+
+header left, center and right
+for header include avatar and time icon
+define a slack color variable in app.css 
+to be used across the app
