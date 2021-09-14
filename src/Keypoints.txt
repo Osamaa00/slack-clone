@@ -19,3 +19,10 @@ wrapping the name and online icon with sidebar info
 creating the sidebar option component
 inside the sidebar option pass an icon
 and only render it if it exists
+
+setup firebase and create a document of rooms in firebase database
+create a collection rooms
+created a document of name with value youtube
+created another document of name general
+inside general created a collection of messages 
+which have a structure for every message.

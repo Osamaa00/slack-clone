@@ -8,12 +8,21 @@ import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import AppsIcon from '@material-ui/icons/Apps';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import React from 'react'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AddIcon from '@material-ui/icons/Add';
+import React, { useState, useEffect } from 'react'
 import './Sidebar.css';
 import SidebarOption from './SidebarOption/SidebarOption';
 
 
 function Sidebar() {
+
+    const [channels, setChannels] = useState([]);
+
+    useEffect(() => {
+
+    }, [])
+
     return (
         <div className="sidebar" >
             <div className="sidebar__header">
@@ -27,14 +36,20 @@ function Sidebar() {
                 <CreateIcon />
             </div>
                 <SidebarOption Icon={InsertCommentIcon} title="Threads" />
-                <SidebarOption title="Youtube" />
-                <SidebarOption Icon={InboxIcon} title="Threads" />
-                <SidebarOption Icon={DraftsIcon} title="Threads" />
-                <SidebarOption Icon={BookmarkBorderIcon} title="Threads" />
-                <SidebarOption Icon={PeopleAltIcon} title="Threads" />
-                <SidebarOption Icon={AppsIcon} title="Threads" />
-                <SidebarOption Icon={FileCopyIcon} title="Threads" />
-                <SidebarOption Icon={ExpandLessIcon} title="Threads" />
+                <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
+                <SidebarOption Icon={DraftsIcon} title="Saved items" />
+                <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
+                <SidebarOption Icon={PeopleAltIcon} title="People & user groups" />
+                <SidebarOption Icon={AppsIcon} title="Apps" />
+                <SidebarOption Icon={FileCopyIcon} title="File browser" />
+                <SidebarOption Icon={ExpandLessIcon} title="Show less" />
+                <hr />
+                <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
+                <hr />
+                <SidebarOption Icon={AddIcon} title="Add Channel" />
+
+                {/* connect to db and list all the channels */}
+                {/* Sidebar Option... */}
         </div>
     )
 }
