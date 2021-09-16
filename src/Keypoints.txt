@@ -26,3 +26,16 @@ created a document of name with value youtube
 created another document of name general
 inside general created a collection of messages 
 which have a structure for every message.
+
+in sidebarjs on mount take the snapshot of the db collection of rooms
+it also gives back the modified, deleted or added data whenever
+something changes in the firebase db
+
+get the rooms and loop through all the docs in it
+and return its id in the object
+
+now implementing react router to swtich btw channels
+
+couldnt get firebase v9 to work with onSnapshot
+so had to switch back to firebase v8
+
