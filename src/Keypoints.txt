@@ -39,3 +39,22 @@ now implementing react router to swtich btw channels
 couldnt get firebase v9 to work with onSnapshot
 so had to switch back to firebase v8
 
+wrapped the chat functionality in the router 
+to switch btw chat screens
+
+use useParams to get the params from url to get 
+the roomid
+
+created Chat component and created two headers div left
+and right for the chat window header
+
+now implement add channel feature in Sidebar option
+
+created two functions of addChannel and select channel
+selected channel will be pushed into history 
+and for addChannel the input from the prompt will create
+the channel in the db
+
+addChannel will be called if the addChannelOption prop
+is sent into the SidebarOption and if id passed Then
+select channel
