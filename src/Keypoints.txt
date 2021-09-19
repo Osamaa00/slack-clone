@@ -58,3 +58,14 @@ the channel in the db
 addChannel will be called if the addChannelOption prop
 is sent into the SidebarOption and if id passed Then
 select channel
+
+now in the Chat component we get the channel data
+from the db whenever the component loads or whenver the 
+roomId changes
+
+on select channel url is changed, useParams get the roomid
+and then db get the data for that id and also get the 
+messages for that channel
+
+created the Message component to be loaded and mapped in the
+Chat component
