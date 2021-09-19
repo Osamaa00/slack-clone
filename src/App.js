@@ -3,13 +3,12 @@ import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Chat from './components/Chat/Chat';
-import { useState } from 'react';
 import Login from './components/Login/Login';
 import { useStateValue } from './context/StateProvider';
 
 function App() {
 
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   return (
     <div className="App">

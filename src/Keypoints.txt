@@ -87,3 +87,6 @@ in the data layer
 
 now in the header get the user display name and image
 also set it in the sidebar
+
+now implementing to send the message and add it into 
+the firestore
