@@ -69,3 +69,21 @@ messages for that channel
 
 created the Message component to be loaded and mapped in the
 Chat component
+
+build the login component and check if the user is logged in
+if user logged in the show the rest of the app otherwise
+show the login page
+
+used google auth to login and setting the user in the data layer
+globally
+
+setting up the StateContextProvider and reducer
+
+wrap the app in the state provider in indexjs and provide props
+
+now use user from the data layer in the app
+and in login when got the user dispatch the action to set the user 
+in the data layer
+
+now in the header get the user display name and image
+also set it in the sidebar

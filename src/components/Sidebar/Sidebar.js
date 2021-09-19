@@ -14,10 +14,12 @@ import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 import SidebarOption from "./SidebarOption/SidebarOption";
 import db from "../../firebase/firebase";
+import { useStateValue } from "../../context/StateProvider";
 
 
 function Sidebar() {
   const [channels, setChannels] = useState([]);
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
 
@@ -37,7 +39,7 @@ function Sidebar() {
           <h2>Clever Programmer</h2>
           <h3>
             <FiberManualRecordIcon />
-            Osama Nadeem
+            { user?.displayName }
           </h3>
         </div>
         <CreateIcon />
